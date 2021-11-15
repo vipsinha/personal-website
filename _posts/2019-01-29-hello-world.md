@@ -40,7 +40,7 @@ int TotalMonthlyPayrollCost(const vector<Employee>& V)
 
 ## std::ceil
 To get the ceiling value of any data
-```example
+```c++
 /*example 1*/
 // to get the centuary of the year
 int solution(int year) {
