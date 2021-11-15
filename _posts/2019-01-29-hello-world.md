@@ -11,7 +11,7 @@ I hope you like it!
 ## std::accumulate
 
 It is use to provide the sum, multiply, etc. I t usually takes pointers as input
-```example
+```c++
 /*example 1*/
 int sum = std::accumulate(v.begin(), v.end(), 0);
 
@@ -55,8 +55,8 @@ int solution(int year) {
 }
 
 /*example 2*/
-ceil(5/4) = 2 
-ceil(10/2) = 5 
+std::ceil(5/4) = 2 
+std::ceil(10/2) = 5 
 ```
 
 ## Java
