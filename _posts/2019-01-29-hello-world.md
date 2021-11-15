@@ -9,15 +9,33 @@ I hope you like it!
 
 # Standard library
 ## std::accumulate
-```info
-def show
-  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
+
+It is use to provide the sum, multiply, etc. I t usually takes pointers as input
+```example
+/*example 1*/
+int sum = std::accumulate(v.begin(), v.end(), 0);
+
+/*example 2*/
+int product = std::accumulate(v.begin(), v.end(), 1, std::multiplies<int>());
+
+/*example 3*/
+class Employee {
+/** All kinds of data: name, ID number, phone, email address... */
+public:
+ int monthlyPay() const;
+};
+
+/** Simple class defining how to add a single Employee's
+ *  monthly pay to our existing tally */
+auto accumulate_func = [](int accumulator, const Employee& emp) {
+   return accumulator + emp.monthlyPay();
+ };
+
+// And here's how you call the actual calculation:
+int TotalMonthlyPayrollCost(const vector<Employee>& V)
+{
+ return std::accumulate(V.begin(), V.end(), 0, accumulate_func);
+}
 ```
 
 ## Php
