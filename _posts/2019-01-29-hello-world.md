@@ -1,15 +1,15 @@
 ---
-title: "Welcome to Jekyll!"
+title: "C++ Notes"
 published: true
 ---
 
-**Hello world**, this is my first Jekyll blog post.
+**Hello everyone**, this is myblog post on C++ and its knowledge.
 
 I hope you like it!
 
-# Highlighter
-## Ruby
-```ruby
+# Standard library
+## std::accumulate
+```info
 def show
   puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
   @widget = Widget(params[:id])
