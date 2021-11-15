@@ -38,11 +38,25 @@ int TotalMonthlyPayrollCost(const vector<Employee>& V)
 }
 ```
 
-## Php
-```php
-<?php
-  print("Hello {$world}");
-?>
+## std::ceil
+to get the ceiling value of any data
+```example
+/*example 1*/
+// to get the centuary of the year
+int solution(int year) {
+    int century;
+    if(year%100){
+        century = std::ceil(year/100) + 1; 
+    }else{
+        century = std::ceil(year/100); 
+    }
+    
+    return century;
+}
+
+/*example 2*/
+ceil(5/4) = 2 
+ceil(10/2) = 5 
 ```
 
 ## Java
