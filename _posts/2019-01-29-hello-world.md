@@ -73,6 +73,22 @@ bool solution(string inputString) {
     return ( std::equal(inputString.begin(), inputString.begin() + inputString.size()/2, inputString.rbegin()) );
 }
 ```
+## std::max_element/min_element
+To find the largest or smallest element stored in a vector, you can use the methods std::max_element and std::min_element, respectively. These methods are defined in <algorithm> header. If several elements are equivalent to the greatest (smallest) element, the methods return the iterator to the first such element. Return v.end() for empty vectors.
+```c++
+int maxElement(vector<int> inputArray) {
+   int old_data = inputArray[0];
+   vector<int> outputArray;
+
+   for(int i=1; i<inputArray.size(); i++){
+       outputArray.push_back(inputArray[i]*old_data);
+       old_data = inputArray[i];
+   }
+
+   return (*(std::max_element(std::begin(outputArray), std::end(outputArray))));
+}
+```
+ 
 
 ## Java
 ```java
