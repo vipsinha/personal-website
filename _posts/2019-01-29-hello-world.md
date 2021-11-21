@@ -10,14 +10,16 @@ I hope you like it!
 # Standard library
 ## std::accumulate
 
-It is use to provide the sum, multiply, etc. I t usually takes pointers as input
+does the sum of all the elements in the range that it takes. This sum being done with operator+. And since we need two values to call operator+, we also need a initial value to start off the algorithm.
 ```c++
 /*example 1*/
 int sum = std::accumulate(v.begin(), v.end(), 0);
-
+```
+```c++
 /*example 2*/
 int product = std::accumulate(v.begin(), v.end(), 1, std::multiplies<int>());
-
+```
+```c++
 /*example 3*/
 class Employee {
 /** All kinds of data: name, ID number, phone, email address... */
@@ -53,10 +55,23 @@ int solution(int year) {
     
     return century;
 }
-
+```
+```c++
 /*example 2*/
 std::ceil(5/4) = 2 
 std::ceil(10/2) = 5 
+```
+## std::equal
+Compares the elements in the range [first1,last1] with those in the range beginning at first2, and returns true if all of the elements in both ranges match.
+```c++
+bool equal (InputIterator1 first1, InputIterator1 last1,
+              InputIterator2 first2);
+```
+To check palindrome
+```c++
+bool solution(string inputString) {
+    return ( std::equal(inputString.begin(), inputString.begin() + inputString.size()/2, inputString.rbegin()) );
+}
 ```
 
 ## Java
