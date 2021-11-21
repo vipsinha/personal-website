@@ -88,3 +88,11 @@ int maxElement(vector<int> inputArray) {
    return (*(std::max_element(std::begin(outputArray), std::end(outputArray))));
 }
 ```
+## power of data
+```c++
+int sizeOfPolygonInsquareBlocks(int sideLength) {
+    if (sideLength>0)
+        return (pow(sideLength,2)+pow((sideLength-1),2));
+    return 0;
+}
+```
