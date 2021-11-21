@@ -89,6 +89,11 @@ int maxElement(vector<int> inputArray) {
 }
 ```
 ## power of data
+To find the power of the data
+```c++
+#include <cmath>
+pow(a,b);
+```
 ```c++
 int sizeOfPolygonInsquareBlocks(int sideLength) {
     if (sideLength>0)
