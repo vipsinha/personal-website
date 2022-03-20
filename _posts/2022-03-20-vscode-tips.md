@@ -1,12 +1,9 @@
 # Tips to connect to virtual machine via VS code
 
 ## Scenario
-
-Host Ubuntu Desktop XX.YY
-Guest Ubuntu Server XX.YY (Running on Virtual box 5)
-Problem
-
-SSH connection refused
+- Host Ubuntu Desktop XX.YY
+- Guest Ubuntu Server XX.YY (Running on Virtual box 5) Problem
+- SSH connection refused
 
 ## Solution
 1. Shut your guest Ubuntu down
