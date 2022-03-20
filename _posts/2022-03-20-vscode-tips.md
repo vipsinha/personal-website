@@ -5,7 +5,7 @@
 - Guest Ubuntu Server XX.YY (Running on Virtual box 5) Problem
 - SSH connection refused
 
-## Solution
+## Solution on putty
 1. Shut your guest Ubuntu down
 2. On Virtualbox go to Setting>network>Adapter1>Advanced>Portforwarding
 3. Name=SSH Hostport=2022 (or any port but 22) Guestport(22)
@@ -13,7 +13,7 @@
 5. On you host open a Putty or whatever you use for SSH
 6. ssh user@127.0.0.1 -p2022 (or any port you mentioned as hostport)
 
-## solution on vs code
+## Solution on VS code
 1. Install Remote Explorer SSH plugin
 2. Click on the add config on top of side window
 3. Enter ssh user@127.0.0.1 -p2022 (user is the VM login name)
